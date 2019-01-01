@@ -1478,7 +1478,8 @@ void main() {
 无论在什么时候执行返回函数，函数都会使用捕获的 <code class="highlighter-rouge">addBy</code> 变量。</p>
 
 <?code-excerpt "misc/test/language_tour/functions_test.dart (function-closure)"?>
-<pre class="prettyprint lang-dart">/// 返回一个函数，该函数将函数的参与与 [addBy]相加。
+<pre class="prettyprint lang-dart">/// 返回一个函数，该函数将函数的参与与 [addBy]
+/// 相加。
 Function makeAdder(num addBy) {
   return (num i) =&gt; addBy + i;
 }
