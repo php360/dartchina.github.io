@@ -1241,7 +1241,7 @@ void enableFlags({bool bold, bool hidden}) {...}</pre>
 <?code-excerpt "misc/lib/language_tour/functions.dart (required-named-parameters)" replace="/@required/[!$&!]/g"?>
 <pre class="prettyprint lang-dart">const Scrollbar({Key key, <span class="highlight">@required</span> Widget child})</pre>
 
-<p>此时 <code class="highlighter-rouge">Scrollbar</code> 是一个构造函数， 当 <code class="highlighter-rouge">child</code> 参数缺少是，分析器会提示错误。</p>
+<p>此时 <code class="highlighter-rouge">Scrollbar</code> 是一个构造函数， 当 <code class="highlighter-rouge">child</code> 参数缺少时，分析器会提示错误。</p>
 
 <p><a href="https://pub.dartlang.org/documentation/meta/latest/meta/required-constant.html">Required</a> 被定义在 <a href="https://pub.dartlang.org/packages/meta">meta</a> package。 无论是直接引入（import）
 <code class="highlighter-rouge">package:meta/meta.dart</code> ，或者引入了其他 package，而这个 package 输出（export）了
