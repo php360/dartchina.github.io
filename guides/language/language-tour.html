@@ -1470,7 +1470,7 @@ void main() {
 <h3 id="词法闭包">
 <a id="词法闭包" class="anchor" href="#%E8%AF%8D%E6%B3%95%E9%97%AD%E5%8C%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>词法闭包</h3>
 
-<p><em>闭包</em> 即一个函数对象，不管该汗水对象在何处被调用，
+<p><em>闭包</em> 即一个函数对象，不管该函数对象在何处被调用，
 该函数都可以访问其作用域内的变量。</p>
 
 <p>函数可以封闭定义到它作用域内的变量。 接下来的示例中，
@@ -1478,8 +1478,7 @@ void main() {
 无论在什么时候执行返回函数，函数都会使用捕获的 <code class="highlighter-rouge">addBy</code> 变量。</p>
 
 <?code-excerpt "misc/test/language_tour/functions_test.dart (function-closure)"?>
-<pre class="prettyprint lang-dart">/// 返回一个函数，该函数将函数的参与与 [addBy]
-相加。
+<pre class="prettyprint lang-dart">/// 返回一个函数，该函数将函数的参与与 [addBy]相加。
 Function makeAdder(num addBy) {
   return (num i) =&gt; addBy + i;
 }
